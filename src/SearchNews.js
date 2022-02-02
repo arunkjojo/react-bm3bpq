@@ -9,6 +9,7 @@ function propsAreEqual(prevProps, nextProps) {
 export function News(props) {
   const [data, setData] = useState([]);
   const api_key = 'fc374080075b4885b33a3fb9db4a73c7';
+  // const api_key_new ='5bb35b1d14e249c391c88810e4bcd42b';
   const q = props.query;
   const limit = props.limit;
   const url = `https://newsapi.org/v2/everything?q=${q}&pageSize=${limit}&sortBy=publishedAt&apiKey=${api_key}`;
